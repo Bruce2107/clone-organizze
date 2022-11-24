@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Organizze</string>
+    <string name="saudação">Olá %1$s</string>
+    <string name="price_template">R$ %1$.2f</string>
+    <string name="negative_price_template">- R$ %1$.2f</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrincipalActivity">
+
+    <include
+        android:id="@+id/content_primary"
+        layout="@layout/content_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        fab:fab_addButtonColorNormal="@color/black"
+        fab:fab_addButtonColorPressed="@color/white"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/Widget.Design.FloatingActionButton">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDespesa"
+            fab:fab_colorPressed="@color/colorPrimaryDespesaDark"
+            fab:fab_icon="@drawable/ic_baseline_email_24"
+            fab:fab_size="mini"
+            fab:fab_title="Despesa" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryReceita"
+            fab:fab_colorPressed="@color/colorPrimaryReceitaDark"
+            fab:fab_size="mini"
+            fab:fab_title="Receita" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
